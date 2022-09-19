@@ -21,7 +21,7 @@ class GildedRose {
                 } else {
                     if (items[i].quality > 0) { // if quality > 0
                         items[i].quality--;
-                        if(items[i].name.contains("Conujured")){
+                        if(items[i].name.contains("Conjured")){
                             items[i].quality--;
                         }
                     }
@@ -39,7 +39,7 @@ class GildedRose {
                     } else {
                         if (items[i].quality > 0) { 
                             items[i].quality--;
-                            if(items[i].name.contains("Conujured")){
+                            if(items[i].name.contains("Conjured")){
                                 items[i].quality--;
                             }
                         }
