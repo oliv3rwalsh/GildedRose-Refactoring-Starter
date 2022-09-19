@@ -21,13 +21,13 @@ class GildedRose {
                 } else {
                     if (items[i].quality > 0) { // if quality > 0
                         items[i].quality--;
+                        if(items[i].name.contains("Conujured")){
+                            items[i].quality--;
+                        }
                     }
                 }
     
                 items[i].sellIn = items[i].sellIn - 1;
-                if(items[i].name.contains("Conujured")){
-                    items[i].quality--;
-                }
     
                 if (items[i].sellIn < 0) { // if past sell in date
                     if(items[i].name.equals("Aged Brie")){
